@@ -1,1 +1,1 @@
-Portfolio website hosted at [Here](https://nate-schaefer.com/)
+Portfolio website hosted [here](https://nate-schaefer.com/)
