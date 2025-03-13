@@ -1,405 +1,181 @@
-<!-- HELLO
--
-DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
-Created by Anil Seervi.
--
-GitHub repo: https://github.com/AnilSeervi/DevFolio
-README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
--
-Have fun creating your portfolio on this template!!! -->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-
-    <!-- Title: add your Portfolio websites's title here -->
-    <title>Nathan Schaefer | Developer</title>
-
-    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[nhschaefer], [Nate Schaefer], skill" />
-
-    <!-- Improve your SEO by adding a small description of you -->
-    <meta name="description" content="Nathan Schaefer | Developer" />
-
-    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
-    <link rel="icon" type="image/png" href="./assets/logo.PNG" />
-
-    <!-- Add your primary-theme color for the value of content -->
-    <meta name="theme-color" content="#36d1dc" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <!-- Fill content with the URL of this portfolio you'll host -->
-    <meta property="og:url" content="https://devfolio.js.org/" />
-    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
-    <meta property="og:title" content="Nathan Schaefer | Developer" />
-    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
-    <meta property="og:description" content="Made using DevFolio Template" />
-    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
-      so that a thumbnail image of your portfolio is shown while shared on other platform -->
-    <meta
-      property="og:image"
-      content="https://devfolio.js.org/assets/devfolio.png"
-    />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <!-- Again fill content attr with the URL of this portfolio you'll host -->
-    <meta property="twitter:url" content="https://devfolio.js.org" />
-    <!-- Recommended to use the same text used within <title> element -->
-    <meta property="twitter:title" content="[Your name here] | Developer" />
-    <!-- short description that shows up while your portfolio is shared -->
-    <meta
-      property="twitter:description"
-      content="Made using DevFolio Template"
-    />
-    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
-    <meta
-      property="twitter:image"
-      content="https://anilseervi.vercel.app/assets/devfolio.png"
-    />
-
-    <!-- link tags -->
-    <link rel="preload" as="style" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-
-    <!-- FontAwesome Icons link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script defer src="./javascript/scrollreveal.min.js"></script>
-    <script
-      defer
-      type="text/javascript"
-      src="./javascript/scrollveal.js"
-    ></script>
-
-    <!-- Remove Google Analytics once you have your portfolio website set-up -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag("js", new Date())
-
-      gtag("config", "UA-122228201-4")
-    </script>
-    <!-- End of Google Analytics -->
-  </head>
-  <body>
-    <!-- Hero Section -->
-    <div id="hero">
-      <section class="container">
-        <h1 class="hero-title">
-          Hi, my name is <span class="text-color-main name">Nathan Schaefer</span>
-          <br />
-          I enjoy developing innovative solutions to problems.
-        </h1>
-        <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#contact">Get in touch</a>
-        </p>
-      </section>
-      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-        <div class="scroll-down"></div
-      ></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nate Schaefer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Nate Schaefer</div>
+            <div class="nav-filters">
+                <div class="dropdown">
+                    <button>Categories <i class="fas fa-chevron-down"></i></button>
+                </div>
+                <div class="dropdown">
+                    <button>Skills <i class="fas fa-chevron-down"></i></button>
+                </div>
+                <div class="dropdown">
+                    <button>Status <i class="fas fa-chevron-down"></i></button>
+                </div>
+                <div class="dropdown">
+                    <button>Tags <i class="fas fa-chevron-down"></i></button>
+                </div>
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search projects">
+                </div>
+                <button class="pick-one-btn">Pick One</button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="profile-section">
+        <div class="profile-image">
+            <img src="assets/profile.png" alt="Nate Schaefer">
+        </div>
+        <div class="profile-description">
+            <h1>Nate Schaefer</h1>
+            <h2>Research Assistant @ University of Iowa</h2>
+            <p>I'm a software engineer with a passion for building innovative solutions. Currently focused on machine learning, embedded systems, and full-stack development. I'm a senior at the University of Iowa studying Computer Science & Engineering. Some of my hobbies are fishing, basketball, and watching UFC.</p>
+            <div class="profile-links">
+                <a href="https://github.com/Nate-Schaefer" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nathan-schaefer/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:nathanschaefer-schaefer@uiowa.edu"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="profile-buttons">
+                <button class="get-to-know-btn">Get to Know Me <i class="fas fa-user-friends"></i></button>
+                <a href="assets/resume.pdf" target="_blank" class="resume-btn">
+                    View Resume <i class="fas fa-file-pdf"></i>
+                </a>
+            </div>
+        </div>
     </div>
-    <!-- /END Hero Section -->
-
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="row about-wrapper">
-          <div class="about-wrapper__image">
-            <img
-              class="img-fluid"
-              src="./assets/fishingZoomedIn.png"
-              alt="Profile Image"
-              width="450"
-              height="350"
-            />
-          </div>
-          <div class="about-wrapper__info">
-            <p class="about-wrapper__info-text">
-              I am a student at the University of Iowa majoring in 
-              Computer Science and Engineering. I'm interested in all things 
-              technology, especially AI, Machine Learning, Web Application 
-              Development, and Embedded Software. I enjoy working on leetcode 
-              problems, playing basketball, and especially fishing!
-            </p>
-            <p class="about-wrapper__info-text">
-              <strong> Languages:</strong> C++, Python, Java, Go, JavaScript, HTML, R, CSS, MATLAB, SQL
-              <br>
-              <strong> Technologies:</strong> Amazon AWS, Terraform, React, Node.js, Jupyter Notebooks, Linux, Express, Pandas, NumPy, Subversion, Git
-              <br>
-              <strong> Engineering Experience:</strong> John Deere SWE Intern, Collins Aerospace SWE Intern, Bio::Neos Software Development Intern
-              <br>
-              <strong> Relevant Experience:</strong> Teaching Assistant, HackUIowa 2022 & 2023
-            </p>
-            <span class="about-wrapper__cta">
-              <a href="Resume_Nathan_Schaefer.pdf" class="cta-btn cta-btn--resume">View Resume</a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /END About Section -->
-
-    <!--Projects Section-->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">DriveSense</h3>
-              <p class="project-wrapper__text-info">
-                Utilized computer vision to monitor and record driver distractedness 
-                with a Raspberry Pi and Teachable Machine. 
-                Constructed a React dashboard to graph user data using MaterialUI. 
-                Used Firebase for cloud storage.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/Nick-Hageman/ECE-5550-Internet-of-Things"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="https://github.com/Nick-Hageman/ECE-5550-Internet-of-Things" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/drivesense.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-        
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">FarmVision</h3>
-              <p class="project-wrapper__text-info">
-                Worked on a team to display field data in an interactive 
-                3D environment in Virtual Reality. Utilized C# and Unity 
-                to create the environment. Used Postman to collect data from 
-                several fields with the John Deere Precision Ag APIs.
-                Awarded "Best Data Collection Hack" at HackUIowa 2023.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/Nick-Hageman/FarmVision"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="https://github.com/Nick-Hageman/FarmVision" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/FarmVision.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Plant Hydration Monitor</h3>
-              <p class="project-wrapper__text-info">
-                Developed an IoT web application to monitor 
-                soil moisture levels in real time. Created 
-                RESTful APIs to receive and handle sensor 
-                data from a microcontroller.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/Nick-Hageman/plant-hydration-monitor"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="https://github.com/Nick-Hageman/plant-hydration-monitor" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/PlantMoisture.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Bank Churners</h3>
-              <p class="project-wrapper__text-info">
-                Machine Learning project classifying whether or not a person 
-                would stay with the bank based on data such as age, income, etc.
-                Used multiple classifiers such as K-Nearest Neighbors, Naive Bayes, 
-                Decision Tree, and Random Forest. 
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/Nate-Schaefer/Bank-Churners-Project"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="https://github.com/Nate-Schaefer/Bank-Churners-Project" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/MLProj.PNG"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Asteroids</h3>
-              <p class="project-wrapper__text-info">
-                Added features to "Asteroids" game in C++ using topics including: 
-                dynamic memory allocation, SFML library, OOP, composition, 
-                inheritance, and polymorphism.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/Nate-Schaefer/Asteroids"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Source Code</a
-                >
-
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="https://github.com/Nate-Schaefer/Asteroids" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/Asteroids.PNG"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact Info</h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">Email: nathanschaefer-schaefer@uiowa.edu <br> </p>
-          <a href="mailto:nathanschaefer-schaefer@uiowa.edu" class="cta-btn cta-btn--resume">Contact</a>
-        </div>
-      </div>
-    </section>
-    <!-- END Contact Section -->
-
-    <!-- Footer Section -->
-    <footer class="footer">
-      <div class="container">
-        <a href="#hero" class="back-to-top" aria-label="go back to top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
-        <div class="social-links">
-          
-          <a
-            href="https://www.linkedin.com/in/nathan-schaefer/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="linkedin"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a
-            href="https://github.com/Nate-Schaefer"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="github"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-        <hr />
-      </div>
+    
+    <div class="category-buttons">
+        <button class="category-btn active">Experiences</button>
+        <button class="category-btn">Projects</button>
+        <button class="category-btn">Notable Coursework</button>
+    </div>
+    
+    <main>
+        <table class="projects-table">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th class="sortable">Title <i class="fas fa-sort"></i></th>
+                    <th>Solution</th>
+                    <th class="sortable">% Done <i class="fas fa-sort"></i></th>
+                    <th class="sortable">Difficulty <i class="fas fa-sort"></i></th>
+                    <th class="sortable">Timeline <i class="fas fa-sort"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Project entries will go here -->
+                <!-- More project entries -->
+            </tbody>
+        </table>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Nate Schaefer</p>
     </footer>
-    <!-- END Footer Section -->
+    
+    <script src="script.js"></script>
+    
+    <!-- Add this right before the closing </body> tag -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div class="modal-body">
+                <div id="modalImage" class="modal-image"></div>
+                <div id="modalDescription" class="modal-description"></div>
+            </div>
+        </div>
+    </div>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear()
-    </script>
-    <script src="./javascript/vanilla-tilt.min.js"></script>
-    <script type="text/javascript" src="./javascript/valtilt.js"></script>
-  </body>
+    <!-- Add this new modal before the closing body tag -->
+    <div id="favoritesModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>My Favorites</h2>
+            
+            <div class="favorites-section">
+                <h3>TV Shows</h3>
+                <div class="favorites-grid">
+                    <div class="favorite-item">
+                        <img src="assets/betterCallSaul.png" alt="Show 1">
+                        <p>Better Call Saul</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="assets/trueDetective.png" alt="Show 2">
+                        <p>True Detective</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="assets/dexter.png" alt="Show 3">
+                        <p>Dexter</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="favorites-section">
+                <h3>Movies</h3>
+                <div class="favorites-grid">
+                    <div class="favorite-item">
+                        <img src="assets/prisoners.png" alt="Movie 1">
+                        <p>Prisoners</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="assets/goneGirl.png" alt="Movie 2">
+                        <p>Gone Girl</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="assets/theBatman.png" alt="Movie 3">
+                        <p>The Batman</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="favorites-section">
+                <h3>Sports</h3>
+                <div class="favorites-grid">
+                    <div class="favorite-item">
+                        <img src="assets/lebron.png" alt="Sport 1">
+                        <p>Basketball</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="assets/saquon.png" alt="Sport 2">
+                        <p>Football</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="assets/volk.png" alt="Sport 3">
+                        <p>UFC</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="favorites-section">
+                <h3>Foods</h3>
+                <div class="favorites-grid">
+                    <div class="favorite-item">
+                        <img src="assets/steak.png" alt="Food 1">
+                        <p>Steak</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="assets/sushi.png" alt="Food 2">
+                        <p>Sushi</p>
+                    </div>
+                    <div class="favorite-item">
+                        <img src="assets/pizza.png" alt="Food 3">
+                        <p>Pizza</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
