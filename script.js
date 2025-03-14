@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
                 status: 'complete',
-                title: 'Research Assistant - University of Iowa',
+                title: 'Research Assistant (STEM Innovator) - University of Iowa',
                 solution: 'https://app.steminnovator.com/#/',
                 progress: '100',
                 difficulty: 'Easy',
@@ -113,11 +113,27 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
                 status: 'complete',
+                title: 'Shards of the Grid',
+                solution: 'https://github.com/olduiowahjmjohnsonSELT2024/projectdirectory-selt_2024_team_003',
+                progress: '100',
+                difficulty: 'Hard',
+                timeline: 'Oct 2024 - Dec 2024'
+            },
+            {
+                status: 'complete',
                 title: 'DriveSense',
                 solution: 'https://github.com/Nick-Hageman/ECE-5550-Internet-of-Things',
                 progress: '100',
                 difficulty: 'Medium',
                 timeline: 'Jan 2024 - May 2024'
+            },
+            {
+                status: 'complete',
+                title: 'The Gauntlet',
+                solution: 'https://myui.uiowa.edu/my-ui/courses/details.page?ci=148347&id=1015825',
+                progress: '100',
+                difficulty: 'Easy',
+                timeline: 'March 2024 - May 2024'
             },
         ],
         'Notable Coursework': [
@@ -326,7 +342,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </ul>
             `,
             categories: ['Computer Vision', 'Machine Learning', 'Mobile Development'],
-            skills: ['Python', 'OpenCV', 'TensorFlow', 'Swift', 'Firebase']
+            skills: ['Python', 'OpenCV', 'TensorFlow', 'Swift', 'Firebase', 'GitHub']
         },
         'FarmVision': {
             image: 'assets/FarmVision.png',
@@ -337,8 +353,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <br><br>
             <a href="https://github.com/Nick-Hageman/FarmVision" target="_blank">Source Code</a>
             `,
-            categories: ['Virtual Reality', 'Data Visualization'],
-            skills: ['Unity', 'C#', 'REST APIs']
+            categories: ['Virtual Reality'],
+            skills: ['Unity', 'C#']
         },
         'DriveSense': {
             image: 'assets/drivesense.png',
@@ -350,7 +366,49 @@ document.addEventListener('DOMContentLoaded', function() {
             <a href="https://www.youtube.com/watch?v=eQbKFbBmM1s" target="_blank">Demo Video</a>
             `,
             categories: ['Computer Vision', 'IoT', 'Web Development'],
-            skills: ['Python', 'TensorFlow', 'React', 'materialUI', 'Firebase', 'Raspberry Pi']
+            skills: ['Python', 'TensorFlow', 'React', 'materialUI', 'Firebase', 'Raspberry Pi', 'GitHub']
+        },
+        'Shards of the Grid': {
+            image: 'assets/shards.png',
+            description: `Capstone project for <a href="https://myui.uiowa.edu/my-ui/courses/details.page?ci=150176&id=1018965" target="_blank">Software Engineering Languages and Tools</a>. 
+            Created a Grid-based multi-player RPG-based video game using Ruby on Rails and modern software engineering practices.
+            <br><br>
+            Key features:
+            <ul>
+                <li>Implemented RESTful API services for game state management</li>
+                <li>Utilized Test-Driven Development with RSpec and Cucumber for behavior testing</li>
+                <li>Developed using Agile methodologies including pair programming and sprint planning</li>
+                <li>Built with MVC architecture and SaaS design patterns</li>
+                <li>Integrated JavaScript and AJAX for real-time game updates</li>
+            </ul>
+            <br>
+            <a href="https://github.com/olduiowahjmjohnsonSELT2024/projectdirectory-selt_2024_team_003" target="_blank">Source Code</a>
+            <br><br>
+            <a href="https://www.youtube.com/watch?v=QLRdmToCWGQ" target="_blank">Demo Video</a>
+            `,
+            categories: [
+                'Full-Stack Development', 
+                'Web Development', 
+                'SaaS', 
+                'Test-Driven Development'
+            ],
+            skills: [
+                'Ruby', 
+                'Rails', 
+                'JavaScript', 
+                'AJAX', 
+                'RSpec', 
+                'Cucumber', 
+                'GitHub'
+            ]
+        },
+        'The Gauntlet': {
+            image: 'assets/VarFinalDemo.mp4',
+            description: `Capstone project of multi-stage challenge game is shown above. 
+            Some challenges included zero gravity, propulsion, enemy collision detection, animations and AI navigation.
+            `,
+            categories: ['Virtual Reality'],
+            skills: ['Unity', 'C#']
         },
         'High Performance Computer Architecture': {
             description: `Graduate course analyzing modern machine architectures using HDL simulation. Students evaluate relationships between computer design and design goals.
@@ -384,7 +442,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <br><br>
             <a href="https://myui.uiowa.edu/my-ui/courses/details.page?ci=148347&id=1033007" target="_blank">Course Details</a>
             `,
-            categories: ['Natural Language Processing', 'Machine Learning', 'AI'],
+            categories: ['Natural Language Processing', 'Machine Learning'],
             skills: ['PyTorch', 'Python']
         },
         'Algorithms': {
@@ -402,7 +460,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <a href="https://myui.uiowa.edu/my-ui/courses/details.page?ci=158661&id=998472" target="_blank">Course Details</a>
             `,
             categories: ['Algorithms', 'Data Structures'],
-            skills: ['Algorithms']
+            skills: ['Python']
         },
         'Data Structures': {
             description: `Fundamental course on data organization and object-oriented programming concepts. Focuses on implementation and application of core data structures.
@@ -418,8 +476,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <br><br>
             <a href="https://myui.uiowa.edu/my-ui/courses/details.page?ci=158653&id=980324" target="_blank">Course Details</a>
             `,
-            categories: ['Data Structures', 'Object-Oriented Programming'],
-            skills: ['Java', 'OOP']
+            categories: ['Data Structures'],
+            skills: ['Java']
         },
         'Embedded Systems': {
             description: `Comprehensive study of microprocessors and microcontrollers in engineering systems. Covers both low-level and high-level software design.
@@ -490,16 +548,11 @@ document.addEventListener('DOMContentLoaded', function() {
             skills: ['Python', 'PyTorch']
         },
         'Virtual Reality': {
-            image: 'assets/VarFinalDemo.mp4',
             description: `Project-based course exploring VR/AR technologies using Unity and Meta Quest 2 headsets. Students develop 3D experiences for AR and VR applications. 
-            Capstone project of multi-stage challenge game is shown above. Some challenge include zero gravity, propulsion, enemy collision detection, animations and AI navigation.
             <br><br>
             Key topics:
             <ul>
-                <li>VR/AR Hardware and Software Fundamentals</li>
                 <li>Unity Game Engine Development</li>
-                <li>3D Graphics and Computer Graphics</li>
-                <li>Human Psychology in VR/AR</li>
                 <li>C# Programming for VR Applications</li>
             </ul>
             <br><br>
@@ -532,10 +585,10 @@ document.addEventListener('DOMContentLoaded', function() {
             Check out our work at <a href="https://audiogene.eng.uiowa.edu/" target="_blank">AudioGene</a>
             <br><br>
             `,
-            categories: ['Web Development', 'Full-stack Development', 'Machine Learning'],
-            skills: ['Python', 'Flask', 'JavaScript', 'React', 'Docker', 'MySQL']
+            categories: ['Web Development', ' Development', 'Machine Learning', 'Research'],
+            skills: ['Python', 'Flask', 'JavaScript', 'React', 'Docker', 'MySQL', 'GitLab']
         },
-        'Research Assistant - University of Iowa': {
+        'Research Assistant (STEM Innovator) - University of Iowa': {
             description: `Conducted data analysis and research for U.S. Department of Education grant-supported work.
             <br><br>
             Key contributions:
@@ -544,8 +597,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <li>Created peer-reviewed conference presentations and research articles</li>
                 <li>Utilized R for statistical analysis and data visualization</li>
             </ul>`,
-            categories: ['Research', 'Data Analysis'],
-            skills: ['R']
+            categories: ['Research'],
+            skills: ['R', 'Python']
         },
         'Software Engineer Intern - John Deere': {
             description: `Worked on the Images team as part of the Operations Center tool.
@@ -567,7 +620,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <li>Enhanced internally used application to support new file formats and improve efficiency</li>
             </ul>`,
             categories: ['DO-178C', 'Test-Driven Development'],
-            skills: ['C++', 'Java', 'UDP', 'Socket Programming', 'Jenkins', 'Linux', 'Subversion']
+            skills: ['C++', 'Java', 'Subversion']
         },
         'Teaching Assistant - Computers in Engineering': {
             description: `Provided comprehensive teaching support for computer engineering fundamentals courses.
@@ -590,8 +643,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <li>Designed and implemented SQLite database for plant and sensor data</li>
                 <li>Developed RESTful API routes for microcontroller communication</li>
             </ul>`,
-            categories: ['IoT', 'Web Development', 'Database Design'],
-            skills: ['JavaScript', 'Express.js', 'SQLite', 'REST APIs', 'IoT', 'Microcontrollers']
+            categories: ['IoT', 'Web Development', 'Full-stack Development'],
+            skills: ['JavaScript', 'MySQL', 'GitHub']
         }
     };
 
@@ -602,7 +655,6 @@ document.addEventListener('DOMContentLoaded', function() {
             titleCell.classList.add('project-title');
             
             titleCell.addEventListener('click', function() {
-                console.log("Click detected");
                 const title = this.textContent;
                 const cleanTitle = title.includes('. ') ? title.split('. ')[1] : title;
                 const projectInfo = projectDescriptions[cleanTitle];
@@ -954,4 +1006,74 @@ document.addEventListener('DOMContentLoaded', function() {
             row.style.display = (statusMatch && difficultyMatch && categoryMatch && skillMatch) ? '' : 'none';
         });
     }
+
+    // Add this after attachDropdownListeners function
+    function attachStatusAndDifficultyListeners() {
+        // Status dropdown
+        const statusDropdown = document.querySelector('.dropdown:nth-child(3)');
+        const statusButton = statusDropdown.querySelector('button');
+        const statusContent = statusDropdown.querySelector('.dropdown-content');
+
+        statusContent.querySelectorAll('a').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active class from siblings
+                statusContent.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+                
+                // Add active class to clicked item
+                this.classList.add('active');
+                
+                // Update button text
+                const buttonText = this.textContent;
+                statusButton.innerHTML = `${buttonText === 'All' ? 'Status' : buttonText} <i class="fas fa-chevron-down"></i>`;
+                
+                // Hide dropdown
+                statusContent.classList.remove('show');
+                
+                // Filter table
+                filterTable();
+            });
+        });
+
+        statusButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            statusContent.classList.toggle('show');
+        });
+
+        // Difficulty dropdown
+        const difficultyDropdown = document.querySelector('.dropdown:nth-child(4)');
+        const difficultyButton = difficultyDropdown.querySelector('button');
+        const difficultyContent = difficultyDropdown.querySelector('.dropdown-content');
+
+        difficultyContent.querySelectorAll('a').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active class from siblings
+                difficultyContent.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+                
+                // Add active class to clicked item
+                this.classList.add('active');
+                
+                // Update button text
+                const buttonText = this.textContent;
+                difficultyButton.innerHTML = `${buttonText === 'All' ? 'Difficulty' : buttonText} <i class="fas fa-chevron-down"></i>`;
+                
+                // Hide dropdown
+                difficultyContent.classList.remove('show');
+                
+                // Filter table
+                filterTable();
+            });
+        });
+
+        difficultyButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            difficultyContent.classList.toggle('show');
+        });
+    }
+
+    // Add this line after updateDropdowns('Experiences')
+    attachStatusAndDifficultyListeners();
 });
