@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Experiences': [
             {
                 status: 'complete',
-                title: 'Research Assistant - University of Iowa',
+                title: 'Research Assistant (AudioGene)- University of Iowa',
                 solution: 'https://audiogene.eng.uiowa.edu/',
                 progress: researchProgress,  // Using research-specific progress
                 difficulty: 'Hard',
@@ -524,6 +524,16 @@ document.addEventListener('DOMContentLoaded', function() {
             `,
             categories: ['Computer Architecture'],
             skills: ['Verilog']
+        },
+        'Research Assistant (AudioGene)- University of Iowa': {
+            description: `Currently working on improving Data Visualization tools for machine learning models in diagnosing Autosomal Dominant Non-Syndromic Hearing Loss.
+            Also working on creating a custom confidence rating for a previously developed ensemble machine learning model.
+            <br><br>
+            Check out our work at <a href="https://audiogene.eng.uiowa.edu/" target="_blank">AudioGene</a>
+            <br><br>
+            `,
+            categories: ['Web Development', 'Full-stack Development', 'Machine Learning'],
+            skills: ['Python', 'Flask', 'JavaScript', 'React', 'Docker', 'MySQL']
         },
         'Research Assistant - University of Iowa': {
             description: `Conducted data analysis and research for U.S. Department of Education grant-supported work.
