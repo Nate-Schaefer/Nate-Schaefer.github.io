@@ -579,6 +579,7 @@ document.addEventListener('DOMContentLoaded', function() {
             skills: ['Verilog']
         },
         'Research Assistant (AudioGene)- University of Iowa': {
+            logo: 'assets/audiogene.png',
             description: `Currently working on improving Data Visualization tools for machine learning models in diagnosing Autosomal Dominant Non-Syndromic Hearing Loss.
             Also working on creating a custom confidence rating for a previously developed ensemble machine learning model.
             <br><br>
@@ -589,6 +590,7 @@ document.addEventListener('DOMContentLoaded', function() {
             skills: ['Python', 'Flask', 'JavaScript', 'React', 'Docker', 'MySQL', 'GitLab']
         },
         'Research Assistant (STEM Innovator) - University of Iowa': {
+            logo: 'assets/stem_innovator.jpeg',
             description: `Conducted data analysis and research for U.S. Department of Education grant-supported work.
             <br><br>
             Key contributions:
@@ -601,6 +603,7 @@ document.addEventListener('DOMContentLoaded', function() {
             skills: ['R', 'Python']
         },
         'Software Engineer Intern - John Deere': {
+            logo: 'assets/john_deere.png',
             description: `Worked on the Images team as part of the Operations Center tool.
             <br><br>
             Key accomplishments:
@@ -612,6 +615,7 @@ document.addEventListener('DOMContentLoaded', function() {
             skills: ['AWS', 'Go', 'Terraform', 'GitHub']
         },
         'Software Engineer Intern - Collins Aerospace': {
+            logo: 'assets/collins_aerospace.jpeg',
             description: `Worked on the Dataloader Team as part of the KC-46 RVS 2.0 Program.
             <br><br>
             Key accomplishments:
@@ -623,6 +627,7 @@ document.addEventListener('DOMContentLoaded', function() {
             skills: ['C++', 'Java', 'Subversion']
         },
         'Teaching Assistant - Computers in Engineering': {
+            logo: 'assets/iowa.png',
             description: `Provided comprehensive teaching support for computer engineering fundamentals courses.
             <br><br>
             Key responsibilities:
@@ -635,6 +640,7 @@ document.addEventListener('DOMContentLoaded', function() {
             skills: ['C++', 'Linux', 'Subversion']
         },
         'Software Development Intern - Bio::Neos': {
+            logo: 'assets/bio_neos.png',
             description: `Developed IoT solutions for agricultural monitoring applications.
             <br><br>
             Key projects:
@@ -665,18 +671,20 @@ document.addEventListener('DOMContentLoaded', function() {
                     const modalImage = document.getElementById('modalImage');
                     const modalDescription = document.getElementById('modalDescription');
                     
-                    if (projectInfo.image) {
+                    if (projectInfo.logo) {
                         // Check if the file is a video
-                        const isVideo = projectInfo.image.toLowerCase().endsWith('.mp4');
+                        const isVideo = projectInfo.logo.toLowerCase().endsWith('.mp4');
                         
                         if (isVideo) {
                             modalImage.innerHTML = `
                                 <video controls width="100%">
-                                    <source src="${projectInfo.image}" type="video/mp4">
+                                    <source src="${projectInfo.logo}" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>`;
                         } else {
-                            modalImage.innerHTML = `<img src="${projectInfo.image}" alt="${cleanTitle}">`;
+                            // Check if it's a logo or project image
+                            const imageClass = projectInfo.logo ? 'company-logo' : 'project-image';
+                            modalImage.innerHTML = `<img src="${projectInfo.logo}" alt="${cleanTitle}" class="${imageClass}">`;
                         }
                         modalImage.style.display = 'block';
                     } else {

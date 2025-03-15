@@ -509,6 +509,20 @@ footer {
     object-fit: cover;
 }
 
+.modal-image img.company-logo {
+    max-width: 200px;  /* or whatever size you prefer */
+    max-height: 100px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+.modal-image img.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .modal-description {
     color: var(--text-muted);
     line-height: 1.6;
