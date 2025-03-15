@@ -828,6 +828,27 @@ document.addEventListener('DOMContentLoaded', function() {
                 `).join('')}
             </div>
         `;
+        const statusDropdown = document.querySelector('.dropdown:nth-child(3)');
+        const tagsDropdown = document.querySelector('.dropdown:nth-child(4)');
+
+        statusDropdown.innerHTML = `
+            <button>Status <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#" data-status="all">All</a>
+                <a href="#" data-status="complete">Completed</a>
+                <a href="#" data-status="in-progress">In Progress</a>
+            </div>
+        `;
+
+        tagsDropdown.innerHTML = `
+            <button>Difficulty <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#" data-difficulty="all">All</a>
+                <a href="#" data-difficulty="easy">Easy</a>
+                <a href="#" data-difficulty="medium">Medium</a>
+                <a href="#" data-difficulty="hard">Hard</a>
+            </div>
+        `;
 
         // Reattach dropdown event listeners
         attachDropdownListeners();
@@ -1033,7 +1054,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.classList.add('active');
                 
                 // Update button text
-                const buttonText = this.textContent;
+                const buttonText = this.textContent.trim();
                 statusButton.innerHTML = `${buttonText === 'All' ? 'Status' : buttonText} <i class="fas fa-chevron-down"></i>`;
                 
                 // Hide dropdown
@@ -1065,7 +1086,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.classList.add('active');
                 
                 // Update button text
-                const buttonText = this.textContent;
+                const buttonText = this.textContent.trim();
                 difficultyButton.innerHTML = `${buttonText === 'All' ? 'Difficulty' : buttonText} <i class="fas fa-chevron-down"></i>`;
                 
                 // Hide dropdown
