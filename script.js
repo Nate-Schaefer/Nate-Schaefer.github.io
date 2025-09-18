@@ -55,6 +55,22 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
                 status: 'complete',
+                title: 'Part-Time Student - Software Engineering - John Deere',
+                solution: 'https://www.deere.com/en/technology-products/precision-ag-technology/operations-center/',
+                progress: '100',
+                difficulty: 'Medium',
+                timeline: 'Aug 2025 - Present'
+            },
+            {
+                status: 'complete',
+                title: 'Software Engineer Intern - John Deere Financial',
+                solution: 'https://www.deere.com/en/finance/financing/digital-financing/myfinancialaccounts/',
+                progress: '100',
+                difficulty: 'Hard',
+                timeline: 'May 2025 - Aug 2025'
+            },
+            {
+                status: 'complete',
                 title: 'Software Engineer Intern - John Deere',
                 solution: 'https://www.deere.com/en/technology-products/precision-ag-technology/operations-center/',
                 progress: '100',
@@ -603,6 +619,29 @@ document.addEventListener('DOMContentLoaded', function() {
             </ul>`,
             categories: ['Research'],
             skills: ['R', 'Python']
+        },
+        'Part-Time Student - Software Engineering - John Deere': {
+            logo: 'assets/john_deere.png',
+            description: `Currently working across multiple teams on the Operations Center tool.
+            <br><br>
+            Key accomplishments:
+            <ul>
+                <li>Mitigated security vulnerabilities in React and Node.js codebases</li>
+            </ul>`,
+            categories: ['Cloud Computing', 'Frontend Development'],
+            skills: ['AWS', 'Node.js', 'Terraform', 'React', 'GitHub']
+        },
+        'Software Engineer Intern - John Deere Financial': {
+            logo: 'assets/john_deere.png',
+            description: `Worked on the Loan Accrual System team as part of John Deere Financial.
+            <br><br>
+            Key accomplishments:
+            <ul>
+                <li>Instrumented the team's APIs with New Relic Distributed Tracing, enabling observability and reducing response time by 90% in some services</li>
+                <li>Built New Relic dashboards using NRQL queries to surface key transaction metrics and accounting data</li>
+            </ul>`,
+            categories: ['Cloud Computing', 'Backend Development'],
+            skills: ['AWS', 'Python', 'Terraform', 'GitHub']
         },
         'Software Engineer Intern - John Deere': {
             logo: 'assets/john_deere.png',
