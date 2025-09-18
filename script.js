@@ -333,6 +333,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 A companion app allows users to play against a computer or another player online.
                 Our team raised $5,000 dollars in funding from the Iowa Innovation Challenge. <a href="https://engineering.uiowa.edu/news-all/2024/11/iowa-engineers-win-39500-iowa-innovation-challenge" target="_blank">Featured Article</a>
                 <br><br>
+                <a href="https://www.youtube.com/watch?v=gnmK5E1Q8xQ" target="_blank">Demo Video</a>
+                <br><br>
                 Key features:
                 <ul>
                     <li>Real-time dart trajectory tracking</li>
